@@ -33,7 +33,6 @@
 
       <if condition="! $login_user">
         <li ><a href="{:U('Home/User/login')}">{$Think.Lang.login_or_register}</a></li>
-        <li ><a href="{$help_url}" target="_blank">{$Think.Lang.about_showdoc}</a></li>
         <else />
         <li><a href="{:U('Home/Item/index')}">{$Think.Lang.my_item}</a></li>
       </if>
